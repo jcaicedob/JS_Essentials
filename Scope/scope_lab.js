@@ -27,6 +27,22 @@ const functionConst = "I'm a block-scoped const";
 }
 show();
 
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
+//console.log(functionVar); // Throws ReferenceError
+//console.log(functionLet); // Throws ReferenceError
+//console.log(functionConst); // Throws ReferenceError
+
+{
+    var var1 = "var declared variable"
+    let let1 = "Let declared variable"
+    const const1 = "Const declared constant"
+
+    var1 = "var new value"
+    console.log(var1)
+
+    let1 = "let new value"
+    console.log(let1)
+
+    const1 = "const new value"
+    console.log(const1)
+
+}
