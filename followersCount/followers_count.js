@@ -15,5 +15,10 @@ function checkCountValue() {
 }
 
 function displayCount() {
-document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
+    document.getElementById('countDisplay').innerHTML=count; // Display the count in the HTML
+}
+
+function resetCount() {
+    document.getElementById('countDisplay').innerHTML=0;
+    alert("The followers count has been reset!")
 }
